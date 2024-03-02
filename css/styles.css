@@ -639,10 +639,7 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-field-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-"" .close-modal-window-btn:hover,
+.close-modal-window-btn:hover,
 .close-modal-window-btn:focus {
   background-color: #404bbf;
   border: none;
