@@ -560,7 +560,7 @@ body {
 
 .form-footer-submit-btn {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   padding: 8px 24px;
   border-radius: 4px;
