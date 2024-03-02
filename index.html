@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <!-- ============Google Fonts links============ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <!-- ============Modern normalize link============ -->
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
     />
     <!-- ============CSS styles link============ -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- ===============Page header=============== -->
@@ -60,7 +60,7 @@
       <section class="section-main section">
         <div class="container">
           <h1 class="header-main">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button class="button" type="button">Order Service</button>
         </div>
       </section>
       <section class="section-advantages section">
@@ -119,7 +119,7 @@
         </div>
       </section>
       <!-- ===============Section team=============== -->
-      <section id="contacts" class="section-team section">
+      <section class="section-team section" id="contacts">
         <div class="container">
           <h2 class="header-our-team">Our Team</h2>
           <ul class="team-list">
@@ -136,9 +136,9 @@
                 <ul class="social-list-name">
                   <li class="social-list-item-name">
                     <a
-                      target="_blank"
                       class="social-list-link-name"
                       href="https://www.instagram.com/"
+                      target="_blank"
                     >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
@@ -147,9 +147,9 @@
                   </li>
                   <li class="social-list-item-name">
                     <a
-                      target="_blank"
                       class="social-list-link-name"
                       href="https://twitter.com/"
+                      target="_blank"
                     >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
@@ -158,9 +158,9 @@
                   </li>
                   <li class="social-list-item-name">
                     <a
-                      target="_blank"
                       class="social-list-link-name"
                       href="https://www.facebook.com/"
+                      target="_blank"
                     >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
@@ -169,9 +169,9 @@
                   </li>
                   <li class="social-list-item-name">
                     <a
-                      target="_blank"
                       class="social-list-link-name"
                       href="https://pl.linkedin.com/"
+                      target="_blank"
                     >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -347,7 +347,7 @@
         </div>
       </section>
       <!-- ===============Section portfolio=============== -->
-      <section id="portfolio" class="section-portfolio section">
+      <section class="section-portfolio section" id="portfolio">
         <div class="container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -485,28 +485,28 @@
           <p class="footer-social-title">Social media</p>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a target="_blank" class="footer-social-link" href="">
+              <a class="footer-social-link" href target="_blank">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a target="_blank" class="footer-social-link" href="">
+              <a class="footer-social-link" href target="_blank">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a target="_blank" class="footer-social-link" href="">
+              <a class="footer-social-link" href target="_blank">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a target="_blank" class="footer-social-link" href="">
+              <a class="footer-social-link" href target="_blank">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -514,7 +514,121 @@
             </li>
           </ul>
         </div>
+        <div class="follow-us">
+          <p class="footer-subcribe">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label" for="footer-user-email">
+              <input
+                class="footer-form-input"
+                name="footer-user-email"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="form-footer-submit-btn" type="submit">
+              Subcribe
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- ===============Backdrop=============== -->
+    <div class="backdrop is-open">
+      <div class="modal-window">
+        <button class="close-modal-window-btn" type="button">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="discription-modal-text">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <div class="rewiew-form-field-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
+              <svg class="review-form-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone"
+              >Phone</label
+            >
+            <div class="rewiew-form-field-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+                required
+              />
+              <svg class="review-form-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >Email</label
+            >
+            <div class="rewiew-form-field-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg class="review-form-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            >
+            <div class="rewiew-form-field-input-wrapper">
+              <textarea
+                class="review-form-comment"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-privacy-checkbox visually-hidden"
+              id="check"
+              type="checkbox"
+            />
+            <label class="review-form-checkbox-label" for="check">
+              <span class="review-form-custom-checkbox">
+                <svg class="review-custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href>Privacy Policy</a>
+            </label>
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
